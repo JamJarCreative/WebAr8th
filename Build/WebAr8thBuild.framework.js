@@ -1243,6 +1243,21 @@ async function createWasm() {
   
       if (!state.pageErrorsHooked) {
         state.pageErrorsHooked = true;
+  
+        // The engine reports config problems (e.g. image targets rejected) only through console.warn.
+        // Only "[XR" lines are forwarded: Unity's own warnings also go through console.warn, and
+        // debug() logs back through Unity as console.log, so this cannot loop.
+        ['warn', 'error'].forEach(function (level) {
+          var original = console[level];
+          console[level] = function () {
+            var text = Array.prototype.join.call(arguments, ' ');
+            if (text.indexOf('[XR') === 0) {
+              debug('Engine ' + level + ': ' + text);
+            }
+            original.apply(console, arguments);
+          };
+        });
+  
         window.addEventListener('error', function (event) {
           debug('Page error: ' + event.message + ' (' + event.filename + ':' + event.lineno + ')');
         });
@@ -1270,13 +1285,24 @@ async function createWasm() {
           })
           .then(function (data) {
             data.imagePath = targetsUrl + data.imagePath.split('/').pop();
+            debug('Image target "' + name + '" loaded, ' + data.type + ' ' + data.properties.width + 'x' + data.properties.height);
             return data;
           });
+      }
+  
+      function describeTargets(detail) {
+        if (!detail || !detail.imageTargets) {
+          return JSON.stringify(detail);
+        }
+        return detail.imageTargets.map(function (target) { return target.name; }).join(', ');
       }
   
       function forwardImageEvent(eventType) {
         return function (event) {
           var detail = event.detail;
+          if (eventType !== 'updated') {
+            debug('Image ' + eventType + ': ' + detail.name);
+          }
           var payload = { type: eventType, name: detail.name };
           if (detail.position && detail.rotation) {
             payload.position = toArray3(detail.position);
@@ -1329,6 +1355,9 @@ async function createWasm() {
           send('OnXrStatus', { status: 'error', message: String(error) });
         },
         listeners: [
+          // Loading and scanning only report progress; they confirm the engine accepted the targets.
+          { event: 'reality.imageloading', process: function (event) { debug('Image targets loading: ' + describeTargets(event.detail)); } },
+          { event: 'reality.imagescanning', process: function (event) { debug('Image targets scanning: ' + describeTargets(event.detail)); } },
           { event: 'reality.imagefound', process: forwardImageEvent('found') },
           { event: 'reality.imageupdated', process: forwardImageEvent('updated') },
           { event: 'reality.imagelost', process: forwardImageEvent('lost') },

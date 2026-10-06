@@ -4,13 +4,13 @@
   "name": "target",
   "type": "PLANAR",
   "properties": {
-    "left": 0,
     "top": 0,
-    "width": 1200,
-    "height": 1600,
+    "left": 150,
+    "width": 900,
+    "height": 1200,
     "isRotated": false,
     "originalWidth": 1200,
-    "originalHeight": 1600
+    "originalHeight": 1200
   },
   "resources": {
     "originalImage": "target_original.jpg",
@@ -18,6 +18,6 @@
     "thumbnailImage": "target_thumbnail.jpg",
     "luminanceImage": "target_luminance.jpg"
   },
-  "created": 1791298109303,
-  "updated": 1791298109303
+  "created": 1791303923295,
+  "updated": 1791303923295
 }
