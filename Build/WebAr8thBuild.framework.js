@@ -1134,6 +1134,7 @@ async function createWasm() {
   var EighthWallState = {
   receiver:null,
   lastCameraJson:null,
+  pageErrorsHooked:false,
   };
   
   
@@ -1228,6 +1229,28 @@ async function createWasm() {
         Module.SendMessage(state.receiver, method, JSON.stringify(payload));
       }
   
+      // Goes to Unity's log (and so JConsole), and to the template's ?debug panel when it is open.
+      function debug(text) {
+        Module.SendMessage(state.receiver, 'OnXrDebug', text);
+        if (window.debugLog) {
+          window.debugLog(text);
+        }
+      }
+  
+      debug('Browser: ' + navigator.userAgent);
+      debug('Window ' + window.innerWidth + 'x' + window.innerHeight + ' @' + window.devicePixelRatio
+        + ', render ratio ' + window.arPixelRatio);
+  
+      if (!state.pageErrorsHooked) {
+        state.pageErrorsHooked = true;
+        window.addEventListener('error', function (event) {
+          debug('Page error: ' + event.message + ' (' + event.filename + ':' + event.lineno + ')');
+        });
+        window.addEventListener('unhandledrejection', function (event) {
+          debug('Page rejection: ' + event.reason);
+        });
+      }
+  
       function toArray3(v) {
         return [v.x, v.y, v.z];
       }
@@ -1277,9 +1300,7 @@ async function createWasm() {
             origin: { x: config.position[0], y: config.position[1], z: config.position[2] },
             facing: { x: config.rotation[0], y: config.rotation[1], z: config.rotation[2], w: config.rotation[3] },
           });
-          if (window.debugLog) {
-            window.debugLog('8th Wall started, xr canvas ' + args.canvasWidth + 'x' + args.canvasHeight);
-          }
+          debug('8th Wall started, xr canvas ' + args.canvasWidth + 'x' + args.canvasHeight);
           send('OnXrStatus', { status: 'started' });
         },
         onUpdate: function (args) {
@@ -1299,10 +1320,7 @@ async function createWasm() {
           }
         },
         onCameraStatusChange: function (args) {
-          // window.debugLog only exists when the page is opened with ?debug (see the WebGL template).
-          if (window.debugLog) {
-            window.debugLog('8th Wall camera: ' + args.status + (args.video ? ' ' + args.video.videoWidth + 'x' + args.video.videoHeight : ''));
-          }
+          debug('8th Wall camera: ' + args.status + (args.video ? ' ' + args.video.videoWidth + 'x' + args.video.videoHeight : ''));
           if (args.status === 'failed') {
             send('OnXrStatus', { status: 'cameraFailed' });
           }
@@ -14000,8 +14018,15 @@ async function createWasm() {
   var _emscripten_glCheckFramebufferStatus = (x0) => GLctx.checkFramebufferStatus(x0);
   var _glCheckFramebufferStatus = _emscripten_glCheckFramebufferStatus;
 
-  var _emscripten_glClear = (x0) => GLctx.clear(x0);
-  var _glClear = _emscripten_glClear;
+  function _glClear(mask) {
+      if (mask == 0x4000) {
+        var writeMask = GLctx.getParameter(GLctx.COLOR_WRITEMASK);
+        if (!writeMask[0] && !writeMask[1] && !writeMask[2] && writeMask[3]) {
+          return;
+        }
+      }
+      GLctx.clear(mask);
+    }
 
   var _emscripten_glClearBufferfi = (x0, x1, x2, x3) => GLctx.clearBufferfi(x0, x1, x2, x3);
   var _glClearBufferfi = _emscripten_glClearBufferfi;
