@@ -1277,6 +1277,9 @@ async function createWasm() {
             origin: { x: config.position[0], y: config.position[1], z: config.position[2] },
             facing: { x: config.rotation[0], y: config.rotation[1], z: config.rotation[2], w: config.rotation[3] },
           });
+          if (window.debugLog) {
+            window.debugLog('8th Wall started, xr canvas ' + args.canvasWidth + 'x' + args.canvasHeight);
+          }
           send('OnXrStatus', { status: 'started' });
         },
         onUpdate: function (args) {
@@ -1296,6 +1299,10 @@ async function createWasm() {
           }
         },
         onCameraStatusChange: function (args) {
+          // window.debugLog only exists when the page is opened with ?debug (see the WebGL template).
+          if (window.debugLog) {
+            window.debugLog('8th Wall camera: ' + args.status + (args.video ? ' ' + args.video.videoWidth + 'x' + args.video.videoHeight : ''));
+          }
           if (args.status === 'failed') {
             send('OnXrStatus', { status: 'cameraFailed' });
           }

@@ -1,0 +1,20 @@
+# Netlify response headers. Unity copies this file into every build from the WebGL template.
+# Gzip + Decompression Fallback names the compressed files *.unityweb. Serving them with
+# Content-Encoding lets the browser decompress natively instead of Unity's JS fallback.
+# The file names follow the build folder name (WebAr8thBuild) - update these if that changes.
+
+/Build/WebAr8thBuild.data.unityweb
+  Content-Encoding: gzip
+  Content-Type: application/octet-stream
+
+/Build/WebAr8thBuild.framework.js.unityweb
+  Content-Encoding: gzip
+  Content-Type: application/javascript
+
+/Build/WebAr8thBuild.wasm.unityweb
+  Content-Encoding: gzip
+  Content-Type: application/wasm
+
+# The camera needs permission from the page itself.
+/*
+  Permissions-Policy: camera=(self)

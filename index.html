@@ -18,6 +18,64 @@
       // Phones report 3x+; rendering both canvases at that density costs far more than it shows.
       window.arPixelRatio = Math.min(window.devicePixelRatio || 1, 2);
     </script>
+    <style>
+      #debug-panel { position: fixed; left: 0; right: 0; bottom: 0; z-index: 10; max-height: 40%; overflow-y: auto;
+        margin: 0; padding: 6px; background: rgba(0, 0, 0, 0.75); color: #0f0; font: 11px/1.3 monospace; white-space: pre-wrap; }
+      #debug-toggle { position: fixed; right: 8px; top: 8px; z-index: 11; padding: 8px 12px; font: 13px sans-serif; }
+    </style>
+    <script>
+      // Open the page with ?debug on a phone to see warnings and errors on screen, and to hide the
+      // Unity canvas so you can tell whether the camera feed underneath is drawing at all.
+      if (/[?&]debug\b/.test(location.search)) {
+        window.addEventListener("DOMContentLoaded", function () {
+          var panel = document.createElement("pre");
+          panel.id = "debug-panel";
+          document.body.appendChild(panel);
+
+          var toggle = document.createElement("button");
+          toggle.id = "debug-toggle";
+          toggle.textContent = "Hide Unity";
+          toggle.onclick = function () {
+            var canvas = document.getElementById("unity-canvas");
+            var hidden = canvas.style.visibility === "hidden";
+            canvas.style.visibility = hidden ? "visible" : "hidden";
+            toggle.textContent = hidden ? "Hide Unity" : "Show Unity";
+          };
+          document.body.appendChild(toggle);
+
+          window.debugLog("UA: " + navigator.userAgent);
+          window.debugLog("window " + window.innerWidth + "x" + window.innerHeight + " @" + window.devicePixelRatio);
+        });
+
+        var pending = [];
+        window.debugLog = function (text) {
+          var panel = document.getElementById("debug-panel");
+          if (panel) {
+            panel.textContent += text + "\n";
+            panel.scrollTop = panel.scrollHeight;
+          } else {
+            pending.push(text);
+          }
+        };
+        window.addEventListener("DOMContentLoaded", function () {
+          pending.forEach(window.debugLog);
+        });
+
+        ["warn", "error"].forEach(function (level) {
+          var original = console[level];
+          console[level] = function () {
+            window.debugLog(level.toUpperCase() + ": " + Array.prototype.join.call(arguments, " "));
+            original.apply(console, arguments);
+          };
+        });
+        window.addEventListener("error", function (event) {
+          window.debugLog("ERROR: " + event.message + " (" + event.filename + ":" + event.lineno + ")");
+        });
+        window.addEventListener("unhandledrejection", function (event) {
+          window.debugLog("REJECTED: " + event.reason);
+        });
+      }
+    </script>
   </head>
   <body>
     <canvas id="xr-canvas"></canvas>
