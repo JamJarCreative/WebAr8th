@@ -1,0 +1,217 @@
+{
+    "name": "joe",
+    "dictionaries": [
+        {
+            "name": "English",
+            "properties": [],
+            "items": [
+                {
+                    "key": "Joe",
+                    "value": "Joe"
+                },
+                {
+                    "key": "Ancoats Trail",
+                    "value": "Ancoats Trail"
+                },
+                {
+                    "key": "AncoatsTrail_title",
+                    "value": "Ancoats Trail"
+                },
+                {
+                    "key": "AncoatsTrail_MainDescription",
+                    "value": "Ancoats is an area in the East side of Manchester that pays homage to it's industrial past through the gentrification of it's old Mill buildings, preserving relics from the past."
+                },
+                {
+                    "key": "Picadilly Trail",
+                    "value": "Picadilly Trail"
+                },
+                {
+                    "key": "PicadillyTrail_title",
+                    "value": "Picadilly Trail"
+                },
+                {
+                    "key": "PicadillyTrail_MainDescription",
+                    "value": "The Picadilly trail focuses around the area of Picadilly in the very centre of Manchester, near it's famous train station."
+                },
+                {
+                    "key": "Joe Flat",
+                    "value": "Joe Flat"
+                },
+                {
+                    "key": "Joe Flat Title Key",
+                    "value": "Joe's Flat"
+                },
+                {
+                    "key": "Joe Flat Description Text Key",
+                    "value": "Joe's Flat. A place of delight. Cornerstone of everything brilliant in the whole region."
+                },
+                {
+                    "key": "Flawd",
+                    "value": "Flawd"
+                },
+                {
+                    "key": "Flawd Title Key",
+                    "value": "Flawd"
+                },
+                {
+                    "key": "Flawd Description Text Key",
+                    "value": "Best place in all of Manchester for a natural wine, with stunning views of the marina."
+                },
+                {
+                    "key": "Rudys",
+                    "value": "Rudys"
+                },
+                {
+                    "key": "Rudys Title Key",
+                    "value": "Rudy's Neapolitan Pizza"
+                },
+                {
+                    "key": "Rudys Description Text Key",
+                    "value": "The best piazz in all of Manchester."
+                },
+                {
+                    "key": "Picadilly Station",
+                    "value": "Picadilly Station"
+                },
+                {
+                    "key": "Picadilly Title Key",
+                    "value": "Picadilly Train Station"
+                },
+                {
+                    "key": "Picadilly Description Text Key",
+                    "value": "The oldest and most famous train station in the North West."
+                },
+                {
+                    "key": "Diecast",
+                    "value": "Diecast"
+                },
+                {
+                    "key": "Diecast Title Key",
+                    "value": "Diecast"
+                },
+                {
+                    "key": "Diecast Description Text Key",
+                    "value": "In a renovated old warehouse, the best place to combine a boogie, good food and cocktails."
+                },
+                {
+                    "key": "Ducie Street Warehouse",
+                    "value": "Ducie Street Warehouse"
+                },
+                {
+                    "key": "Ducie Street Title Key",
+                    "value": "Ducie Street Warehouse"
+                },
+                {
+                    "key": "Ducie Street Description Text Key",
+                    "value": "This old mill building has been converted into a stunning hotel, event space and bar!"
+                }
+            ]
+        },
+        {
+            "name": "Welsh",
+            "properties": [],
+            "items": [
+                {
+                    "key": "Joe",
+                    "value": "Joe"
+                },
+                {
+                    "key": "Ancoats Trail",
+                    "value": ""
+                },
+                {
+                    "key": "AncoatsTrail_title",
+                    "value": ""
+                },
+                {
+                    "key": "AncoatsTrail_MainDescription",
+                    "value": ""
+                },
+                {
+                    "key": "Picadilly Trail",
+                    "value": ""
+                },
+                {
+                    "key": "PicadillyTrail_title",
+                    "value": ""
+                },
+                {
+                    "key": "PicadillyTrail_MainDescription",
+                    "value": ""
+                },
+                {
+                    "key": "Joe Flat",
+                    "value": ""
+                },
+                {
+                    "key": "Joe Flat Title Key",
+                    "value": ""
+                },
+                {
+                    "key": "Joe Flat Description Text Key",
+                    "value": ""
+                },
+                {
+                    "key": "Flawd",
+                    "value": ""
+                },
+                {
+                    "key": "Flawd Title Key",
+                    "value": ""
+                },
+                {
+                    "key": "Flawd Description Text Key",
+                    "value": ""
+                },
+                {
+                    "key": "Rudys",
+                    "value": ""
+                },
+                {
+                    "key": "Rudys Title Key",
+                    "value": ""
+                },
+                {
+                    "key": "Rudys Description Text Key",
+                    "value": ""
+                },
+                {
+                    "key": "Picadilly Station",
+                    "value": ""
+                },
+                {
+                    "key": "Picadilly Title Key",
+                    "value": ""
+                },
+                {
+                    "key": "Picadilly Description Text Key",
+                    "value": ""
+                },
+                {
+                    "key": "Diecast",
+                    "value": ""
+                },
+                {
+                    "key": "Diecast Title Key",
+                    "value": ""
+                },
+                {
+                    "key": "Diecast Description Text Key",
+                    "value": ""
+                },
+                {
+                    "key": "Ducie Street Warehouse",
+                    "value": ""
+                },
+                {
+                    "key": "Ducie Street Title Key",
+                    "value": ""
+                },
+                {
+                    "key": "Ducie Street Description Text Key",
+                    "value": ""
+                }
+            ]
+        }
+    ]
+}

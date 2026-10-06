@@ -1,0 +1,833 @@
+{
+    "name": "General",
+    "dictionaries": [
+        {
+            "name": "English",
+            "properties": [],
+            "items": [
+                {
+                    "key": "Welcome Text",
+                    "value": "Welcome"
+                },
+                {
+                    "key": "Begin Text",
+                    "value": "Begin"
+                },
+                {
+                    "key": "Hint Text",
+                    "value": "Hint"
+                },
+                {
+                    "key": "Continue Text",
+                    "value": "Continue"
+                },
+                {
+                    "key": "Loading Text",
+                    "value": "Loading"
+                },
+                {
+                    "key": "Yes Text",
+                    "value": "Yes"
+                },
+                {
+                    "key": "No Text",
+                    "value": "No"
+                },
+                {
+                    "key": "Restart Text",
+                    "value": "Restart"
+                },
+                {
+                    "key": "Back Text",
+                    "value": "Back"
+                },
+                {
+                    "key": "Finish Text",
+                    "value": "Finish"
+                },
+                {
+                    "key": "Send Text",
+                    "value": "Send"
+                },
+                {
+                    "key": "Share Text",
+                    "value": "Share"
+                },
+                {
+                    "key": "Collect Text",
+                    "value": "Collect"
+                },
+                {
+                    "key": "Show Text",
+                    "value": "Show"
+                },
+                {
+                    "key": "Hide Text",
+                    "value": "Hide"
+                },
+                {
+                    "key": "OK Text",
+                    "value": "OK"
+                },
+                {
+                    "key": "Exit Text",
+                    "value": "Exit"
+                },
+                {
+                    "key": "Submit Text",
+                    "value": "Submit"
+                },
+                {
+                    "key": "Explore Text",
+                    "value": "Explore"
+                },
+                {
+                    "key": "Leave Text",
+                    "value": "Leave"
+                },
+                {
+                    "key": "Off Text",
+                    "value": "Off"
+                },
+                {
+                    "key": "On Text",
+                    "value": "On"
+                },
+                {
+                    "key": "Coming Soon Text",
+                    "value": "Coming Soon"
+                },
+                {
+                    "key": "Well done Text",
+                    "value": "Well done"
+                },
+                {
+                    "key": "Thank you Text",
+                    "value": "Thank you"
+                },
+                {
+                    "key": "Not now Text",
+                    "value": "Not now"
+                },
+                {
+                    "key": "I understand Text",
+                    "value": "I understand"
+                },
+                {
+                    "key": "Did you know Text",
+                    "value": "Did you know?"
+                },
+                {
+                    "key": "Enter email address Placeholder",
+                    "value": "Enter email address"
+                },
+                {
+                    "key": "Keep Exploring AR Text",
+                    "value": "Keep exploring in AR"
+                },
+                {
+                    "key": "Look here Text",
+                    "value": "Look here"
+                },
+                {
+                    "key": "Strongly agree Text",
+                    "value": "Strongly agree"
+                },
+                {
+                    "key": "Agree Text",
+                    "value": "Agree"
+                },
+                {
+                    "key": "Neither Nor Text",
+                    "value": "Neither agree nor disagree"
+                },
+                {
+                    "key": "Disagree Text",
+                    "value": "Disagree"
+                },
+                {
+                    "key": "Strongly disagree Text",
+                    "value": "Strongly disagree"
+                },
+                {
+                    "key": "Oops, something went wrong Text",
+                    "value": "Oops, something went wrong"
+                },
+                {
+                    "key": "No Signal_Public Text",
+                    "value": "Oops, it looks like you have no connectivity, try connecting to WiFi"
+                },
+                {
+                    "key": "No Signal_Private Text",
+                    "value": "Oops, it looks like you have no signal, please seek assistance."
+                },
+                {
+                    "key": "AR Safety Title",
+                    "value": "Safety Information"
+                },
+                {
+                    "key": "AR Safety Message",
+                    "value": "Please use the AR experience safely and be aware of the space around you. The experience should not be used by children without adult supervision."
+                },
+                {
+                    "key": "Information not stored",
+                    "value": "(This information will not be stored or used)"
+                },
+                {
+                    "key": "To continue, turn on device location Text",
+                    "value": "To continue, turn on device location, which uses Google's location service."
+                },
+                {
+                    "key": "Allow Text",
+                    "value": "Allow"
+                },
+                {
+                    "key": "Later Text",
+                    "value": "Later"
+                },
+                {
+                    "key": "Settings Text",
+                    "value": "Settings"
+                },
+                {
+                    "key": "Are you enjoying Text",
+                    "value": "Are you enjoying"
+                },
+                {
+                    "key": "App name text",
+                    "value": "Jam Base App"
+                },
+                {
+                    "key": "Get alerts while your phone sleeps Text",
+                    "value": "Get alerts while your♪phone sleeps"
+                },
+                {
+                    "key": "Android_BacgroundGPSDescription Text",
+                    "value": "To conserve battery and receive notifications when you are close to a Wild Wander zone when the app is closed, this app needs your permission to use your location in the background whilst the app is closed or not in use. ♪♪No location data is collected or transmitted to third parties or used for advertising."
+                },
+                {
+                    "key": "IOS_BacgroundGPSDescription Text",
+                    "value": "If you want to be alerted to a point of interest along the trail while the app is closed, you'll need to allow permission for the app to use your location."
+                },
+                {
+                    "key": "IOS_BacgroundGPSDescription2 Text",
+                    "value": "No location data is collected or transmitted to third parties\\nor used for advertising."
+                },
+                {
+                    "key": "BacgroundGPSDescription Text",
+                    "value": "To conserve battery you can put your phone to sleep while walking but\\nstill receive alerts when you reach\\na point of interest.♪♪You can enable background location services in the settings menu."
+                },
+                {
+                    "key": "Dont show this again Text",
+                    "value": "Don't show this again"
+                },
+                {
+                    "key": "BacgroundGPSDescription rejcted Text",
+                    "value": "To conserve battery, you can put your phone to sleep while walking but still receive alerts when you reach\\na point of interest.♪♪You can enable background location services in the settings menu."
+                },
+                {
+                    "key": "Android_BacgroundGPSDescriptionReminder Text",
+                    "value": "Go to ♪Settings -> Permissions -> Location♪and select \\\"Allow all the time\\\"♪♪Tracking will stop when app is fully closed."
+                },
+                {
+                    "key": "IOS_BacgroundGPSDescriptionReminder Text",
+                    "value": "Go to settings - Location\\nand select <B>'Always'</B>\\n\\nTracking will stop when app\\nis fully closed."
+                },
+                {
+                    "key": "Location permission required Text",
+                    "value": "Location permission required"
+                },
+                {
+                    "key": "Android_AllowLocationPermissionText",
+                    "value": "This app requires location\\npermission to function.\\nGo to settings ->Permissions -> Location\\nand allow location permissions."
+                },
+                {
+                    "key": "IOS_AllowLocationPermission Text",
+                    "value": "This app requires location permission to function properly.\\n\\nGo to settings > Privacy and Security > Location Services > Merthyr Mawr Explorer and select <B>'While Using the App'</B>"
+                },
+                {
+                    "key": "NotificationsTitle",
+                    "value": "Get notifications from this application."
+                },
+                {
+                    "key": "Android_NotificationsDescription Text",
+                    "value": "This app needs your permission♪to send you notifications.♪Go to settings -> Permissions♪and allow notification permissions."
+                },
+                {
+                    "key": "iOS_NotificationsDescription Text",
+                    "value": "This app needs your permission♪to send you notifications.♪Go to settings -> Notifications♪and allow notification permissions."
+                },
+                {
+                    "key": "You're ready to explore! Text",
+                    "value": "You're ready to explore!"
+                },
+                {
+                    "key": "Take your phone off silent Text",
+                    "value": "Take your phone off silent so you♪don't miss any zones!"
+                },
+                {
+                    "key": "You've Reached Text",
+                    "value": "You've reached a"
+                },
+                {
+                    "key": "Back to map Text",
+                    "value": "Back to map"
+                },
+                {
+                    "key": "Enable Location services Text",
+                    "value": "Background Location services"
+                },
+                {
+                    "key": "SwitchLanguageTextTMP",
+                    "value": "Change Language"
+                },
+                {
+                    "key": "Choose the trail Text",
+                    "value": "Choose the trail you'd like to follow"
+                },
+                {
+                    "key": "Clear Data Text",
+                    "value": "Clear Data"
+                },
+                {
+                    "key": "Directions Text",
+                    "value": "Directions"
+                },
+                {
+                    "key": "HighAccuracy Text",
+                    "value": "High"
+                },
+                {
+                    "key": "AccuracyInfo Text",
+                    "value": "High accuracy can increase battery drain"
+                },
+                {
+                    "key": "Higher Accuracy services Text",
+                    "value": "Higher accuracy"
+                },
+                {
+                    "key": "How To Use Text",
+                    "value": "How To Use"
+                },
+                {
+                    "key": "Information Text",
+                    "value": "Information"
+                },
+                {
+                    "key": "Location accuracy Text",
+                    "value": "Location accuracy"
+                },
+                {
+                    "key": "LowAccuracy Text",
+                    "value": "Low"
+                },
+                {
+                    "key": "Map Text",
+                    "value": "Map"
+                },
+                {
+                    "key": "Menu Text",
+                    "value": "Menu"
+                },
+                {
+                    "key": "More info Text",
+                    "value": "More info"
+                },
+                {
+                    "key": "Privacy Policy Text",
+                    "value": "Privacy Policy"
+                },
+                {
+                    "key": "Select language Text",
+                    "value": "Select language"
+                },
+                {
+                    "key": "Start exploring Text",
+                    "value": "Start exploring"
+                },
+                {
+                    "key": "Trails Text",
+                    "value": "Trails"
+                },
+                {
+                    "key": "View on map Text",
+                    "value": "View on map"
+                },
+                {
+                    "key": "zone",
+                    "value": "zone"
+                },
+                {
+                    "key": "Contact_Text",
+                    "value": "Contact"
+                },
+                {
+                    "key": "GpsStatusText",
+                    "value": "Out of area"
+                },
+                {
+                    "key": "GpsInitializingText",
+                    "value": "Initialising"
+                },
+                {
+                    "key": "SafetyPromptTitle",
+                    "value": "Stay Safe!"
+                },
+                {
+                    "key": "SafetyPromptBody",
+                    "value": "• Trailing roots, rabbit holes and old stumps – can trip you up.\\n\\n• Sea buckthorn spines which can scratch and puncture the skin – take care when passing.\\n\\n• Livestock graze the dunes – if encountered, move quietly around the herd.\\n\\n• Do not dig holes or tunnels in the sand dunes - sand can collapse and suffocate you.\\n\\n• You may come across walkers, dogs or horses at any time.\\n\\n• Adders live on the reserve. If seen, please leave them alone."
+                },
+                {
+                    "key": "Walk Here Text",
+                    "value": "Walk Here"
+                },
+                {
+                    "key": "TURN AROUND Text",
+                    "value": "Turn\\nAround"
+                },
+                {
+                    "key": "Align screen Instructions",
+                    "value": "Align screen with the horizon..."
+                },
+                {
+                    "key": "leftInstructions",
+                    "value": "Look left until the dial\\nstarts to change colour."
+                },
+                {
+                    "key": "rightInstructions",
+                    "value": "Look right until the dial\\nstarts to change colour."
+                },
+                {
+                    "key": "DialStayInstructions",
+                    "value": "Stay still until the dial changes colour."
+                },
+                {
+                    "key": "Move slider to see into the past Text",
+                    "value": "Move slider to see into the past..."
+                },
+                {
+                    "key": "Try again Text",
+                    "value": "Try again"
+                },
+                {
+                    "key": "Guess Text",
+                    "value": "Guess"
+                }
+            ]
+        },
+        {
+            "name": "Welsh",
+            "properties": [],
+            "items": [
+                {
+                    "key": "Welcome Text",
+                    "value": "Croeso"
+                },
+                {
+                    "key": "Begin Text",
+                    "value": "Dechrau"
+                },
+                {
+                    "key": "Hint Text",
+                    "value": "Awgrym"
+                },
+                {
+                    "key": "Continue Text",
+                    "value": "Parhau"
+                },
+                {
+                    "key": "Loading Text",
+                    "value": "Llwytho"
+                },
+                {
+                    "key": "Yes Text",
+                    "value": "Le"
+                },
+                {
+                    "key": "No Text",
+                    "value": "Na"
+                },
+                {
+                    "key": "Restart Text",
+                    "value": "Ailddechrau"
+                },
+                {
+                    "key": "Back Text",
+                    "value": "Nôl"
+                },
+                {
+                    "key": "Finish Text",
+                    "value": "Gorffen"
+                },
+                {
+                    "key": "Send Text",
+                    "value": "Anfon"
+                },
+                {
+                    "key": "Share Text",
+                    "value": "Rhannu"
+                },
+                {
+                    "key": "Collect Text",
+                    "value": "Casglu"
+                },
+                {
+                    "key": "Show Text",
+                    "value": "Dangos"
+                },
+                {
+                    "key": "Hide Text",
+                    "value": "Cuddio"
+                },
+                {
+                    "key": "OK Text",
+                    "value": "Iawn"
+                },
+                {
+                    "key": "Exit Text",
+                    "value": "Allanfa"
+                },
+                {
+                    "key": "Submit Text",
+                    "value": "Cyflwyno"
+                },
+                {
+                    "key": "Explore Text",
+                    "value": "Archwilio"
+                },
+                {
+                    "key": "Leave Text",
+                    "value": "Gadael"
+                },
+                {
+                    "key": "Off Text",
+                    "value": "I ffwrdd"
+                },
+                {
+                    "key": "On Text",
+                    "value": "Ymlaen"
+                },
+                {
+                    "key": "Coming Soon Text",
+                    "value": "Yn dod yn fuan"
+                },
+                {
+                    "key": "Well done Text",
+                    "value": "Da Iawn"
+                },
+                {
+                    "key": "Thank you Text",
+                    "value": "Diolch"
+                },
+                {
+                    "key": "Not now Text",
+                    "value": "Ddim nawr"
+                },
+                {
+                    "key": "I understand Text",
+                    "value": "Rwy’n deall"
+                },
+                {
+                    "key": "Did you know Text",
+                    "value": "Wyddoch chi?"
+                },
+                {
+                    "key": "Enter email address Placeholder",
+                    "value": "Rhowch gyfeiriad e-bost"
+                },
+                {
+                    "key": "Keep Exploring AR Text",
+                    "value": "Parhau i archwilio gyda RE"
+                },
+                {
+                    "key": "Look here Text",
+                    "value": "Edrych yma"
+                },
+                {
+                    "key": "Strongly agree Text",
+                    "value": "Anghytuno’n gryf"
+                },
+                {
+                    "key": "Agree Text",
+                    "value": "Anghytuno"
+                },
+                {
+                    "key": "Neither Nor Text",
+                    "value": "Ddim yn cytuno nac yn anghytuno"
+                },
+                {
+                    "key": "Disagree Text",
+                    "value": "Cytuno"
+                },
+                {
+                    "key": "Strongly disagree Text",
+                    "value": "Cytuno’n gryf"
+                },
+                {
+                    "key": "Oops, something went wrong Text",
+                    "value": "Wps, aeth rhywbeth o’i le"
+                },
+                {
+                    "key": "No Signal_Public Text",
+                    "value": "Wps, dydy hi ddim yn ymddangos bod gennych chi gysylltedd, ceisiwch gysylltu â WiFi"
+                },
+                {
+                    "key": "No Signal_Private Text",
+                    "value": "Wps, dydy hi ddim yn ymddangos bod gennych chi gysylltedd, ceisiwch gysylltu â WiFi"
+                },
+                {
+                    "key": "AR Safety Title",
+                    "value": "Gwybodaeth am Ddiogelwch"
+                },
+                {
+                    "key": "AR Safety Message",
+                    "value": "Defnyddiwch y profiad AR yn ddiogel a byddwch yn ymwybodol o'r lle o'ch cwmpas. Ni ddylai'r profiad gael ei ddefnyddio gan blant heb oruchwyliaeth oedolion."
+                },
+                {
+                    "key": "Information not stored",
+                    "value": "(Ni chaiff y wybodaeth hon ei storio na’i defnyddio)"
+                },
+                {
+                    "key": "To continue, turn on device location Text",
+                    "value": "I barhau, trowch leoliad dyfais ymlaen, sy'n defnyddio gwasanaeth lleoli Google."
+                },
+                {
+                    "key": "Allow Text",
+                    "value": "Caniatáu"
+                },
+                {
+                    "key": "Later Text",
+                    "value": "Wedyn"
+                },
+                {
+                    "key": "Settings Text",
+                    "value": "Gosodiadau"
+                },
+                {
+                    "key": "Are you enjoying Text",
+                    "value": "Ydych chi'n mwynhau'r app?"
+                },
+                {
+                    "key": "App name text",
+                    "value": "Chwilotwr Jam Base"
+                },
+                {
+                    "key": "Get alerts while your phone sleeps Text",
+                    "value": "Rhybuddion tra bod eich\\nffôn yn cysgu"
+                },
+                {
+                    "key": "Android_BacgroundGPSDescription Text",
+                    "value": "I arbed batri a derbyn hysbysiadau pan fyddwch chi'n agos at Barth Twyni pan fydd yr ap ar gau, mae angen eich caniatâd ar yr ap hwn i ddefnyddio'ch lleoliad yn y cefndir tra bod yr ap ar gau neu ddim yn cael ei ddefnyddio. ♪♪Nid oes unrhyw ddata lleoliad yn cael ei gasglu na'i drosglwyddo i drydydd parti nac yn cael ei ddefnyddio ar gyfer hysbysebu.\\n\\n"
+                },
+                {
+                    "key": "IOS_BacgroundGPSDescription Text",
+                    "value": "Os ydych am gael eich hysbysu am fan o ddiddordeb ar hyd y llwybr tra bod yr ap ar gau, bydd angen i chi roi caniatâd i'r ap ddefnyddio eich lleoliad."
+                },
+                {
+                    "key": "IOS_BacgroundGPSDescription2 Text",
+                    "value": "Nid oes unrhyw ddata lleoliad yn\\ncael ei gasglu na'i drosglwyddo i\\ndrydydd parti nac yn cael ei\\nddefnyddio ar gyfer hysbysebu.\\n\\n"
+                },
+                {
+                    "key": "BacgroundGPSDescription Text",
+                    "value": "I arbed batri, gallwch roi'ch ffôn i\\ngysgu wrth gerdded ond derbyn\\nhysbysiadau pan fyddwch chi'n\\ncyrraedd man o ddiddordeb.♪♪Gallwch alluogi gwasanaethau lleoliad cefndir yn y ddewislen gosodiadau."
+                },
+                {
+                    "key": "Dont show this again Text",
+                    "value": "Peidio dangos hwn eto"
+                },
+                {
+                    "key": "BacgroundGPSDescription rejcted Text",
+                    "value": "I arbed batri, gallwch roi'ch ffôn i gysgu wrth gerdded ond derbyn hysbysiadau pan fyddwch chi'n cyrraedd man o ddiddordeb.♪♪Gallwch alluogi gwasanaethau lleoliad cefndir yn y ddewislen gosodiadau."
+                },
+                {
+                    "key": "Android_BacgroundGPSDescriptionReminder Text",
+                    "value": "Ewch i ♪Gosodiadau -> Caniatâd -> Lleoliad♪a dewis \\\"Caniatáu trwy'r amser\\\"♪♪Bydd olrhain yn stopio pan fydd yr ap ar gau'n llwyr."
+                },
+                {
+                    "key": "IOS_BacgroundGPSDescriptionReminder Text",
+                    "value": "Ewch i'r gosodiadau - Lleoliad\\na dewiswch <B>'Bob amser'</B>\\n\\nBydd olrhain yn stopio pan fydd\\nyr ap ar gau'n llwyr."
+                },
+                {
+                    "key": "Location permission required Text",
+                    "value": "Angen caniatâd lleoliad"
+                },
+                {
+                    "key": "Android_AllowLocationPermissionText",
+                    "value": "Mae'r ap hwn yn gofyn am ganiatâd ♪lleoliad i weithredu.♪Ewch i’r gosodiadau -> Caniatâd -> Lleoliad♪a chaniatáu lleoliad."
+                },
+                {
+                    "key": "IOS_AllowLocationPermission Text",
+                    "value": "Mae angen caniatâd lleoli ar yr ap yma i weithredu’n gywir.♪♪Ewch i gosodiadau (Privacy and Security) > Location Services>♪Merthyr Mawr Explorer a dewis <B> While Using the App</B>"
+                },
+                {
+                    "key": "NotificationsTitle",
+                    "value": "Cael hysbysiadau o'r rhaglen hon."
+                },
+                {
+                    "key": "Android_NotificationsDescription Text",
+                    "value": "Mae angen eich caniatâd ar yr ap♪i anfon hysbysiadau atoch chi.♪Ewch i gosodiadau (settings) -> Permissions♪a rhoi caniatâd ar gyfer hysbysiadau."
+                },
+                {
+                    "key": "iOS_NotificationsDescription Text",
+                    "value": "Mae angen eich caniatâd♪ar yr ap hwn i anfon hysbysiadau atoch.♪Ewch i’r gosodiadau -> Hysbysiadau♪a chaniatâu hysbysiadau."
+                },
+                {
+                    "key": "You're ready to explore! Text",
+                    "value": "Rydych chi'n barod i archwilio!"
+                },
+                {
+                    "key": "Take your phone off silent Text",
+                    "value": "Tynnwch eich ffôn oddi ar tawel fel nad ydych♪chi'n colli unrhyw hysbysiadau!"
+                },
+                {
+                    "key": "You've Reached Text",
+                    "value": "Rydych chi wedi cyrraedd"
+                },
+                {
+                    "key": "Back to map Text",
+                    "value": "Yn ôl i'r map"
+                },
+                {
+                    "key": "Enable Location services Text",
+                    "value": "Gwasanaethau Lleoli Cefndir"
+                },
+                {
+                    "key": "SwitchLanguageTextTMP",
+                    "value": "Newid Iaith"
+                },
+                {
+                    "key": "Choose the trail Text",
+                    "value": "Dewiswch y llwybr yr hoffech ei ddilyn"
+                },
+                {
+                    "key": "Clear Data Text",
+                    "value": "Clirio Data"
+                },
+                {
+                    "key": "Directions Text",
+                    "value": ""
+                },
+                {
+                    "key": "HighAccuracy Text",
+                    "value": "Uchel"
+                },
+                {
+                    "key": "AccuracyInfo Text",
+                    "value": "Gall cywirdeb uchel gynyddu’r defnydd o’r batri."
+                },
+                {
+                    "key": "Higher Accuracy services Text",
+                    "value": ""
+                },
+                {
+                    "key": "How To Use Text",
+                    "value": "Sut i Ddefnyddio"
+                },
+                {
+                    "key": "Information Text",
+                    "value": "Gwybodaeth"
+                },
+                {
+                    "key": "Location accuracy Text",
+                    "value": "Cywirdeb lleoliad"
+                },
+                {
+                    "key": "LowAccuracy Text",
+                    "value": "Isel"
+                },
+                {
+                    "key": "Map Text",
+                    "value": "Map"
+                },
+                {
+                    "key": "Menu Text",
+                    "value": "Dewislen"
+                },
+                {
+                    "key": "More info Text",
+                    "value": "Mwy o wybodaeth"
+                },
+                {
+                    "key": "Privacy Policy Text",
+                    "value": "Polisi Preifatrwydd"
+                },
+                {
+                    "key": "Select language Text",
+                    "value": "Dewiswch iaith"
+                },
+                {
+                    "key": "Start exploring Text",
+                    "value": "Dechrau Chwilota"
+                },
+                {
+                    "key": "Trails Text",
+                    "value": "Llwybrau"
+                },
+                {
+                    "key": "View on map Text",
+                    "value": "Gweld ar Fap"
+                },
+                {
+                    "key": "zone",
+                    "value": "Parth"
+                },
+                {
+                    "key": "Contact_Text",
+                    "value": "Cyswllt"
+                },
+                {
+                    "key": "GpsStatusText",
+                    "value": "Allan o'r ardal"
+                },
+                {
+                    "key": "GpsInitializingText",
+                    "value": ""
+                },
+                {
+                    "key": "SafetyPromptTitle",
+                    "value": "Arhoswch yn Ddiogel!"
+                },
+                {
+                    "key": "SafetyPromptBody",
+                    "value": "• Gwreiddiau, tyllau cwningod a hen foncyffion – gallan nhw eich baglu.\\n\\n• Drain rhafnwydden y môr sy'n gallu crafu a thyllu'r croen – byddwch yn ofalus wrth basio.\\n\\n• Mae da byw yn pori'r twyni – os gwelwch chi nhw, symudwch yn dawel o’u hamgylch.\\n\\n• Peidiwch â chloddio tyllau na thwneli yn y twyni tywod - gall tywod ddymchwel a'ch mygu.\\n\\n• Gallwch ddod ar draws cerddwyr, cŵn neu geffylau ar unrhyw adeg.\\n\\n• Mae gwiberod yn byw yn y warchodfa. Os gwelwch chi nhw, gadewch lonydd iddynt."
+                },
+                {
+                    "key": "Walk Here Text",
+                    "value": "Cerddwch yma"
+                },
+                {
+                    "key": "TURN AROUND Text",
+                    "value": "Trowch\\no gwmpas"
+                },
+                {
+                    "key": "Align screen Instructions",
+                    "value": "Codwch y sgrin at y gorwel..."
+                },
+                {
+                    "key": "leftInstructions",
+                    "value": "Edrychwch i'r chwith\\nnes bod y deial yn\\ndechrau newid lliw."
+                },
+                {
+                    "key": "rightInstructions",
+                    "value": "Edrychwch i'r dde\\nnes bod y deial yn\\ndechrau newid lliw."
+                },
+                {
+                    "key": "DialStayInstructions",
+                    "value": "Arhoswch yn llonydd nes\\nbod y deial yn newid lliw."
+                },
+                {
+                    "key": "Move slider to see into the past Text",
+                    "value": "Symudwch y llithrydd i\\nweld i'r gorffennol..."
+                },
+                {
+                    "key": "Try again Text",
+                    "value": ""
+                },
+                {
+                    "key": "Guess Text",
+                    "value": ""
+                }
+            ]
+        }
+    ]
+}
