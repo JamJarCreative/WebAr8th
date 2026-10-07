@@ -1,0 +1,21 @@
+{
+    "imagePath": "image-targets/SamplePandaTracker/SamplePandaTracker_luminance.jpg",
+    "name": "SamplePandaTracker",
+    "type": "PLANAR",
+    "properties": {
+        "left": 99,
+        "top": 0,
+        "width": 481,
+        "height": 641,
+        "isRotated": false,
+        "originalWidth": 641,
+        "originalHeight": 641
+    },
+    "resources": {
+        "originalImage": "SamplePandaTracker_original.jpg",
+        "croppedImage": "SamplePandaTracker_cropped.jpg",
+        "luminanceImage": "SamplePandaTracker_luminance.jpg"
+    },
+    "created": 1791346591120,
+    "updated": 1791346591120
+}

@@ -1,0 +1,21 @@
+{
+    "imagePath": "image-targets/0_BornTracker/0_BornTracker_luminance.jpg",
+    "name": "0_BornTracker",
+    "type": "PLANAR",
+    "properties": {
+        "left": 59,
+        "top": 0,
+        "width": 480,
+        "height": 640,
+        "isRotated": false,
+        "originalWidth": 640,
+        "originalHeight": 640
+    },
+    "resources": {
+        "originalImage": "0_BornTracker_original.jpg",
+        "croppedImage": "0_BornTracker_cropped.jpg",
+        "luminanceImage": "0_BornTracker_luminance.jpg"
+    },
+    "created": 1791346837540,
+    "updated": 1791346837540
+}

@@ -1,0 +1,21 @@
+{
+    "imagePath": "image-targets/1_WedTracker/1_WedTracker_luminance.jpg",
+    "name": "1_WedTracker",
+    "type": "PLANAR",
+    "properties": {
+        "left": 21,
+        "top": 0,
+        "width": 480,
+        "height": 640,
+        "isRotated": false,
+        "originalWidth": 640,
+        "originalHeight": 640
+    },
+    "resources": {
+        "originalImage": "1_WedTracker_original.jpg",
+        "croppedImage": "1_WedTracker_cropped.jpg",
+        "luminanceImage": "1_WedTracker_luminance.jpg"
+    },
+    "created": 1791346847358,
+    "updated": 1791346847358
+}

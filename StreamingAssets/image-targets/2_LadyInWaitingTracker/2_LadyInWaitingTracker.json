@@ -1,0 +1,21 @@
+{
+    "imagePath": "image-targets/2_LadyInWaitingTracker/2_LadyInWaitingTracker_luminance.jpg",
+    "name": "2_LadyInWaitingTracker",
+    "type": "PLANAR",
+    "properties": {
+        "left": 115,
+        "top": 0,
+        "width": 480,
+        "height": 640,
+        "isRotated": false,
+        "originalWidth": 640,
+        "originalHeight": 640
+    },
+    "resources": {
+        "originalImage": "2_LadyInWaitingTracker_original.jpg",
+        "croppedImage": "2_LadyInWaitingTracker_cropped.jpg",
+        "luminanceImage": "2_LadyInWaitingTracker_luminance.jpg"
+    },
+    "created": 1791346854997,
+    "updated": 1791346854997
+}

@@ -1274,9 +1274,11 @@ async function createWasm() {
         return [q.x, q.y, q.z, q.w];
       }
   
-      // The CLI writes imagePath as "image-targets/<file>"; point it at wherever Unity serves the folder.
+      // Each target lives in image-targets/<name>/. imagePath in the JSON is relative to the site root
+      // ("image-targets/..."), so point it at wherever Unity serves the target's folder.
       function loadTarget(name) {
-        return fetch(targetsUrl + name + '.json')
+        var folderUrl = targetsUrl + name + '/';
+        return fetch(folderUrl + name + '.json')
           .then(function (response) {
             if (!response.ok) {
               throw new Error('Image target "' + name + '" not found at ' + response.url);
@@ -1284,7 +1286,7 @@ async function createWasm() {
             return response.json();
           })
           .then(function (data) {
-            data.imagePath = targetsUrl + data.imagePath.split('/').pop();
+            data.imagePath = folderUrl + data.imagePath.split('/').pop();
             debug('Image target "' + name + '" loaded, ' + data.type + ' ' + data.properties.width + 'x' + data.properties.height);
             return data;
           });
