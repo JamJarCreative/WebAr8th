@@ -1,0 +1,11 @@
+@font-face { font-family: "wl-font-0"; src: url("font-0.ttf"); font-display: block; }
+#web-loading-screen { position: fixed; left: 0; top: 0; right: 0; bottom: 0; z-index: 5; overflow: hidden; --s: 1; --progress: 0; }
+#web-loading-screen .wl { position: absolute; box-sizing: border-box; }
+#web-loading-screen .wl-text { display: flex; line-height: 1.2; }
+#web-loading-screen .wl-text > span { width: 100%; }
+#wl-0 { left: calc(0% + 0px * var(--s)); right: calc(0% - 0px * var(--s)); bottom: calc(0% + 0px * var(--s)); top: calc(0% - 0px * var(--s)); background-color: rgba(16, 18, 23, 1); }
+#wl-1 { left: calc(50% + -450px * var(--s)); right: calc(50% - 450px * var(--s)); bottom: calc(50% + 60px * var(--s)); top: calc(50% - 220px * var(--s)); font-size: calc(96px * var(--s)); color: rgba(255, 255, 255, 1); font-family: "wl-font-0", sans-serif; align-items: center; text-align: center; padding: calc(0px * var(--s)) calc(0px * var(--s)) calc(0px * var(--s)) calc(0px * var(--s)); font-weight: 700; }
+#wl-2 { left: calc(50% + -320px * var(--s)); right: calc(50% - 320px * var(--s)); bottom: calc(50% + -47px * var(--s)); top: calc(50% - -33px * var(--s)); background-color: rgba(38, 42, 51, 1); }
+#wl-3 { left: calc(0% + 0px * var(--s)); right: calc(0% - 0px * var(--s)); bottom: calc(0% + 0px * var(--s)); top: calc(0% - 0px * var(--s)); background-color: rgba(79, 209, 165, 1); clip-path: inset(0 calc((1 - var(--progress)) * 100%) 0 0); }
+#wl-4 { left: calc(50% + -320px * var(--s)); right: calc(50% - 320px * var(--s)); bottom: calc(50% + -140px * var(--s)); top: calc(50% - -80px * var(--s)); font-size: calc(36px * var(--s)); color: rgba(138, 143, 153, 1); font-family: "wl-font-0", sans-serif; align-items: center; text-align: center; padding: calc(0px * var(--s)) calc(0px * var(--s)) calc(0px * var(--s)) calc(0px * var(--s)); }
+#wl-5 { left: calc(50% + -450px * var(--s)); right: calc(50% - 450px * var(--s)); bottom: calc(0% + 90px * var(--s)); top: calc(100% - 150px * var(--s)); font-size: calc(36px * var(--s)); color: rgba(138, 143, 153, 1); font-family: "wl-font-0", sans-serif; align-items: center; text-align: center; padding: calc(0px * var(--s)) calc(0px * var(--s)) calc(0px * var(--s)) calc(0px * var(--s)); }

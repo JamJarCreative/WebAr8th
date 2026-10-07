@@ -73,8 +73,30 @@
         });
       }
     </script>
+    <!-- Written by Tools > 8th Wall > Loading Screen > Export To WebGL Template. -->
+    <link rel="stylesheet" href="TemplateData/loading/loading.css">
   </head>
   <body>
+    <!-- web-loading-screen:begin -->
+    <div id="web-loading-screen" data-scale-mode="screen" data-ref-width="1080" data-ref-height="1920" data-match-mode="match" data-match="0.5" data-fade="0.4" data-wait-for-hide="false">
+      <div id="wl-0" class="wl">
+      </div>
+      <div id="wl-1" class="wl wl-text">
+        <span>WebAr8th</span>
+      </div>
+      <div id="wl-2" class="wl">
+        <div id="wl-3" class="wl">
+        </div>
+      </div>
+      <div id="wl-4" class="wl wl-text">
+        <span>Loading <span class="wl-progress">0</span>%</span>
+      </div>
+      <div id="wl-5" class="wl wl-text">
+        <span>Jam Creative Studios</span>
+      </div>
+    </div>
+    <!-- web-loading-screen:end -->
+    <script src="TemplateData/web-loading.js"></script>
     <canvas id="xr-canvas"></canvas>
     <canvas id="unity-canvas" tabindex="-1"></canvas>
     <script>
@@ -101,8 +123,15 @@
         productVersion: "0.0.4",
         webglContextAttributes: { premultipliedAlpha: true, preserveDrawingBuffer: false },
         devicePixelRatio: window.arPixelRatio,
+      }, function (progress) {
+        window.setWebLoadingProgress(progress);
       }).then(function (unityInstance) {
         window.unityInstance = unityInstance;
+        window.setWebLoadingProgress(1);
+        // Otherwise the scene hides it via WebLoadingScreen.Hide() (e.g. once AR has started).
+        if (!window.webLoadingWaitsForScene) {
+          window.hideWebLoadingScreen();
+        }
       }).catch(function (message) {
         alert(message);
       });

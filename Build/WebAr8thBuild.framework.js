@@ -6519,6 +6519,12 @@ async function createWasm() {
           requestOptions.timeout = timeout;
   	}
 
+  function _WebLoading_Hide() {
+      if (window.hideWebLoadingScreen) {
+        window.hideWebLoadingScreen();
+      }
+    }
+
   var ___assert_fail = (condition, filename, line, func) =>
       abort(`Assertion failed: ${UTF8ToString(condition)}, at: ` + [filename ? UTF8ToString(filename) : 'unknown filename', line, func ? UTF8ToString(func) : 'unknown function']);
 
@@ -19100,6 +19106,8 @@ var wasmImports = {
   JS_WebRequest_SetRequestHeader: _JS_WebRequest_SetRequestHeader,
   /** @export */
   JS_WebRequest_SetTimeout: _JS_WebRequest_SetTimeout,
+  /** @export */
+  WebLoading_Hide: _WebLoading_Hide,
   /** @export */
   __assert_fail: ___assert_fail,
   /** @export */
